@@ -9,8 +9,8 @@ if(isset($_POST['yt_video_link'])) {
         if($vid) {
             $data = $yt->VideoData($vid);          
             if($data) {
-                $thumbnail    = $data['videos']["thumbnail"];
-                $title    = $data['videos']["title"];
+                $thumbnail = $data['videos']["thumbnail"];
+                $title = $data['videos']["title"];
                 $formats = $data['videos']['formats'];              
             }
             else {
